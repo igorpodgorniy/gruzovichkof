@@ -3,7 +3,7 @@ import {Grid} from "@material-ui/core"; // Grid импортируется не 
 
 import useStyles from "./style"; // импорт стилей из файла style.js
 
-export default function Page({id, options, count=0, color, data}) { // в компонент необходимо передавать промис. В данном случае деструктуризацией
+export default function Page({id, options, count=0, color, data}) { // в компонент необходимо передавать пропс. В данном случае деструктуризацией
     // задал значение по умолчанию для count
     return <MyWonderfulComponent
                 id={id} // Передача аргументов в фигурных скобках
@@ -15,7 +15,7 @@ export default function Page({id, options, count=0, color, data}) { // в ком
 }
 
 function MyWonderfulComponent({id, options, children, ...other}) { // добавил остаточный оператор.
-    // В компонент необходимо передавать промис. В данном случае деструктуризацией
+    // В компонент необходимо передавать пропс. В данном случае деструктуризацией
     const color = useStyles(); // передача значения функции useStyles в color
     const { count } = other;
     const [ summ, setSumm ] = useState(count); // деструктцризация useState() происходит через []
