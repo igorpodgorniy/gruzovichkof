@@ -1,0 +1,22 @@
+{
+  "name": "gruzovichkof",
+  "version": "1.0.0",
+  "description": "тестовое задание для Грузовичкофф",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "keywords": [
+    "next.js",
+    "react",
+    "material-ui"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
