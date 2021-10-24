@@ -39,3 +39,12 @@ function MyWonderfulComponent({id, options, children, ...other}) { // добав
         </div>
     );
 }
+
+// использование функции getServerSideProps для вывода текста в консоль на стороне сервера
+export async function getServerSideProps() {
+    const log = {text: 'Hello from SSR'};
+    console.log(log.text);
+    return {
+        props: {log}
+    }
+}
